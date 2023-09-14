@@ -84,12 +84,12 @@ const Home = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.",
       topColor: "#FF980055",
     },
-    {
-      depName: "EPD",
-      depInfo:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.",
-      topColor: "#1DE9B556",
-    },
+    // {
+    //   depName: "EPD",
+    //   depInfo:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.",
+    //   topColor: "#1DE9B556",
+    // },
     {
       depName: "Events",
       depInfo:
@@ -182,14 +182,14 @@ const Home = () => {
         animate={{ opacity: 1 }} // Final state (visible)
         transition={{ duration: 1 }} // Duration of the animation in seconds
       >
-        <div className={`${classes.mainInfo} mainInfo`}>
+        {/* <div className={`${classes.mainInfo} mainInfo`}>
           <div className={`${classes.homeFlexBox} homeFlexBox`}>
             <motion.div
               initial={{ x: "-100vw" }} // Initial position (outside of the viewport on the left)
               animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
               transition={{ duration: 1 }} // Duration of the animation in seconds
-            >
-              <div className={`${classes.homeLeft} homeLeft`}>
+            > */}
+              {/* <div className={`${classes.homeLeft} homeLeft`}>
                 <div
                   className={`${classes.section_heading_home} section_heading_home`}
                   style={{ textAlign: "center" }}
@@ -224,8 +224,8 @@ const Home = () => {
                     <NavLink to={"/aboutus"}>View More</NavLink>
                   </span>
                 </div>
-              </div>
-            </motion.div>
+              </div> */}
+            {/* </motion.div>
             <motion.div
               initial={{ x: "100vw" }} // Initial position (outside of the viewport on the left)
               animate={{ x: "50vw" }} // Final position (x: 0 means no horizontal translation)
@@ -244,7 +244,7 @@ const Home = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={`${classes.homeAbout} homeAbout`}>
           <motion.div
@@ -260,7 +260,8 @@ const Home = () => {
           </motion.div>
           <div className={`${classes.aboutInfo} aboutInfo`}>
             <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
-              <motion.div
+              <motion.div 
+              className={`${classes.leftaboutFlexBox} leftaboutFlexBox`}
                 initial={{ x: "-100vw" }} // Initial position (outside of the viewport on the left)
                 animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
                 transition={{ duration: 1 }} // Duration of the animation in seconds
@@ -277,6 +278,7 @@ const Home = () => {
               </motion.div>
 
               <motion.div
+              className={`${classes.rightaboutFlexBox} rightaboutFlexBox`}
                 initial={{ x: "100vw" }} // Initial position (outside of the viewport on the left)
                 animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
                 transition={{ duration: 1 }} // Duration of the animation in seconds
@@ -310,6 +312,7 @@ const Home = () => {
           <div className={`${classes.aboutInfo} aboutInfo`}>
             <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
               <motion.div
+              className={`${classes.leftaboutFlexBox} leftaboutFlexBox`}
                 initial={{ x: "-100vw" }} // Initial position (outside of the viewport on the left)
                 animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
                 transition={{ duration: 1 }} // Duration of the animation in seconds
@@ -342,6 +345,7 @@ const Home = () => {
               </motion.div>
 
               <motion.div
+              className={`${classes.rightaboutFlexBox} rightaboutFlexBox`}
                 initial={{ x: "100vw" }} // Initial position (outside of the viewport on the left)
                 animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
                 transition={{ duration: 1 }} // Duration of the animation in seconds
@@ -427,7 +431,7 @@ const Home = () => {
               </option>
               <option value="D3">D3</option>
               <option value="DeSCo">DeSCo</option>
-              <option value="EPD">EPD</option>
+              {/* <option value="EPD">EPD</option> */}
               <option value="Events">Events</option>
               <option value="HPA">HPA</option>
               <option value="Parishodh">Parishodh</option>
