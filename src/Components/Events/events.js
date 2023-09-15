@@ -83,7 +83,7 @@ const Events = (props) => {
                 </motion.div>
                 <motion.div
                 initial={{ y: '100vh' }} // Initial position (outside of the viewport on the left)
-                animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
+                animate={{ y: '0vh' }} // Final position (x: 0 means no horizontal translation)
                 transition={{ duration: 1 }} // Duration of the animation in seconds
               >
           
