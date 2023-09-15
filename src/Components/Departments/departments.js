@@ -95,7 +95,7 @@ const Departments = (props) => {
         { title: "CLP", img:"/assets/clp.svg", color:colors.clpText, color_light:colors.clpTextLight, bglite:colors.clpBgLight},
         { title: "D3", img:"/assets/d3.svg", color:colors.d3Text, color_light:colors.d3TextLight, bglite:colors.d3BgLight},
         { title: "DeSCo", img:"/assets/desco.svg", color:colors.descoText, color_light:colors.descoTextLight, bglite:colors.descoBgLight},
-        { title: "EPD", img: "/assets/epd.svg", color:colors.epdText, color_light:colors.epdTextLight, bglite:colors.epdBgLight},
+        // { title: "EPD", img: "/assets/epd.svg", color:colors.epdText, color_light:colors.epdTextLight, bglite:colors.epdBgLight},
         { title: "Events", img:"/assets/events.svg", color:colors.eventsText, color_light:colors.eventsTextLight, bglite:colors.eventsBgLight},
         { title: "HPA", img:"/assets/hpa.svg", color:colors.hpaText, color_light:colors.hpaTextLight, bglite:colors.hpaBgLight },
         { title: "Parishodh", img:"/assets/parishod.svg", color:colors.parishodText, color_light:colors.parishodTextLight, bglite:colors.parishodBgLight},
@@ -162,7 +162,7 @@ const Departments = (props) => {
             </aside>
             <motion.div
             initial={{ y: '100vh' }} // Initial position (outside of the viewport on the left)
-            animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
+            animate={{ y: '0vh' }} // Final position (x: 0 means no horizontal translation)
             transition={{ duration: 1 }} // Duration of the animation in seconds
           >
             <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].bglite}`}}>
@@ -187,6 +187,7 @@ const Departments = (props) => {
 
             <div className="mobColsD" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
             <motion.div
+            className={`${classes.mobColsDChild} mobColsDChild`}
             initial={{ opacity: 0 }} // Initial state (hidden)
             animate={{ opacity: 1 }} // Final state (visible)
             transition={{ duration: 1 }} // Duration of the animation in seconds
