@@ -7,11 +7,7 @@ import {motion} from "framer-motion";
 const ResCard = (props) => {
   
     return (
-        <motion.div
-      initial={{ x: '-100vw' }} // Initial position (outside of the viewport on the top)
-      animate={{ y: 0 }} // Final position (y: 0 means no vertical translation)
-      transition={{ duration: 1 }} // Duration of the animation in seconds
-    >
+        
         <div className="resCardCon">
             <div className="info">
                 <div className="head">
@@ -32,7 +28,6 @@ const ResCard = (props) => {
                 )}
             </div>
             </div>
-            </motion.div>
     );
 }
 

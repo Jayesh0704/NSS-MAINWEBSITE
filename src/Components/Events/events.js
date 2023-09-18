@@ -106,11 +106,7 @@ const Events = (props) => {
                 </div>
 
                 <div className="mobCols" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
-                    <motion.div
-                    initial={{ opacity: 0 }} // Initial state (hidden)
-                    animate={{ opacity: 1 }} // Final state (visible)
-                    transition={{ duration: 1 }}
-                    >
+                    
                     {dataArray.map((event, i) =>
                         <MobCard
                             title={event.title}
@@ -121,7 +117,7 @@ const Events = (props) => {
                                 onClickChange(i);
                             }}
                         />)}
-                        </motion.div>
+                        
                 </div>
 
                 
