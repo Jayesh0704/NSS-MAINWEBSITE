@@ -10,8 +10,8 @@ const Topbar = () => {
     return (
         <motion.div
         initial={{ y: '-100vh' }} // Initial position (outside of the viewport on the top)
-        animate={{ y: 0 }} // Final position (y: 0 means no vertical translation)
-        transition={{ duration: 1 }} // Duration of the animation in seconds
+        animate={{ y: "0vh" }} // Final position (y: 0 means no vertical translation)
+        transition={{ duration: 0.5 }} // Duration of the animation in seconds
       >
             <nav>
                 <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
