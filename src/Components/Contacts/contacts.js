@@ -51,9 +51,9 @@ const Contacts = () => {
   });
 
   const url1 =
-    "https://sheet.best/api/sheets/aeb1902d-6681-4939-a7db-999211ca9af6";
+    "https://sheet.best/api/sheets/248abfa7-c565-4532-965f-abf3cfcad2cd";
   const url2 =
-    "https://sheet.best/api/sheets/c971af4e-e04a-43a9-bedf-94aa6df09731";
+    "https://sheet.best/api/sheets/e5b55fdb-b595-457c-b8cc-19b267de77f6";
   const toast = useToast();
 
   const submitHandler = (e) => {
