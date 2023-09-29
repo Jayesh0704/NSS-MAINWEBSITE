@@ -10,8 +10,8 @@ const Topbar = () => {
     return (
         <motion.div
         initial={{ y: '-100vh' }} // Initial position (outside of the viewport on the top)
-        animate={{ y: 0 }} // Final position (y: 0 means no vertical translation)
-        transition={{ duration: 1 }} // Duration of the animation in seconds
+        animate={{ y: "0vh" }} // Final position (y: 0 means no vertical translation)
+        transition={{ duration: 0.5 }} // Duration of the animation in seconds
       >
             <nav>
                 <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
@@ -47,7 +47,7 @@ const Topbar = () => {
                             <NavLink to={"/departments"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Departments</NavLink>
                             <NavLink to={"/events"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Events</NavLink>
                             <NavLink to={"/resources"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Resources</NavLink>
-                            <NavLink to={"/uc"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Umang Collection</NavLink>
+                            {/* <NavLink to={"/uc"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Umang Collection</NavLink> */}
                             <NavLink to={"/contactus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</NavLink>
                         </Nav>
                     </Navbar.Collapse>

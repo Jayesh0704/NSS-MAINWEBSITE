@@ -83,7 +83,7 @@ const Events = (props) => {
                 </motion.div>
                 <motion.div
                 initial={{ y: '100vh' }} // Initial position (outside of the viewport on the left)
-                animate={{ x: 0 }} // Final position (x: 0 means no horizontal translation)
+                animate={{ y: '0vh' }} // Final position (x: 0 means no horizontal translation)
                 transition={{ duration: 1 }} // Duration of the animation in seconds
               >
           
@@ -106,11 +106,7 @@ const Events = (props) => {
                 </div>
 
                 <div className="mobCols" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
-                    <motion.div
-                    initial={{ opacity: 0 }} // Initial state (hidden)
-                    animate={{ opacity: 1 }} // Final state (visible)
-                    transition={{ duration: 1 }}
-                    >
+                    
                     {dataArray.map((event, i) =>
                         <MobCard
                             title={event.title}
@@ -121,7 +117,7 @@ const Events = (props) => {
                                 onClickChange(i);
                             }}
                         />)}
-                        </motion.div>
+                        
                 </div>
 
                 

@@ -118,6 +118,7 @@
     margin-bottom: 2rem;
   }
 
+
   .backMob {
     width: 90%;
     font-family: poppins;
@@ -151,6 +152,6 @@
 
 @media all and (max-width: 380px) {
   .mobCols {
-    grid-column-gap: 0.2rem;
+    grid-column-gap: 1.2rem;
   }
 }

@@ -19,11 +19,14 @@
 
     .mobCardimg{
         margin-top: 7.5%;
-        width: 80%
+        width: 80%;
+        object-fit: contain;
         
         img{
             width: 90% !important;
             max-height: 170px !important;
+            border-radius: 10px;
+
         }
     }
 
